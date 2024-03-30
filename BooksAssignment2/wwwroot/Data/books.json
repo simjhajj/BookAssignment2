@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The Time Machine",
+    "author": "H.G Wells",
+    "img": "https://images.unsplash.com/photo-1535856010157-629669745746?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "genre": "Science Fiction"
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K Rowling",
+    "img": "https://images.unsplash.com/photo-1599744249110-8590cac79900?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8SGFycnklMjBQb3R0ZXIlMjBhbmQlMjB0aGUlMjBTb3JjZXJlcidzJTIwU3RvbmV8ZW58MHx8MHx8fDA%3D",
+    "genre": "Fiction"
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "img": "https://images.unsplash.com/photo-1583422120752-e3963a2c064c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8amFuZSUyMGF1c3RlbnxlbnwwfHwwfHx8MA%3D%3D",
+    "genre": "Romance"
+  },
+  {
+    "title": "The Invisible Man",
+    "author": "H.G. Wells",
+    "img": "https://images.unsplash.com/photo-1706380163831-b3f6c2339b9e?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "genre": "Science Fiction"
+  },
+  {
+    "title": "Fairy Tale",
+    "author": "Stephen King",
+    "img": "https://images.unsplash.com/photo-1514539079130-25950c84af65?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFpcnl0YWxlfGVufDB8fDB8fHww",
+    "genre": "Fantasy Fiction"
+  },
+  {
+    "title": "To Kill a Mocking Bird",
+    "author": "Harper Lee",
+    "img": "https://images.unsplash.com/photo-1506799688517-a81d6bd3df37?q=80&w=1989&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "genre": "Thriller"
+  }
+]

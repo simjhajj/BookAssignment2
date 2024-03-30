@@ -1,0 +1,44 @@
+﻿@page                                 
+@model BooksAssignment2.Pages.AboutModel 
+
+<!-- Razor code block for C# logic -->
+<!-- Setting the title for the page -->
+@{
+    // ViewData is a dictionary-like object to pass data between controller and view
+    // Setting the "Title" property of ViewData to "About"
+    ViewData["Title"] = "About";   
+}
+
+<!-- Container for About Us content -->
+<div class="container mt-5">
+    <!-- Row for main content and team image -->
+    <div class="row">
+        <!-- Main content column -->
+        <div class="col-md-8">
+            <!-- Main heading -->
+            <h1 class="display-4">About Us</h1>
+            <!-- Lead paragraph -->
+            <p class="lead">Book Catalogue is a project developed by a dedicated team of individuals passionate about literature and technology. Meet our team members:</p>
+
+            <!-- Subheading for team members -->
+            <h2 class="mt-4">Team Members</h2>
+
+            <!-- Unordered list for team members -->
+            <ul class="list-unstyled">
+                <!-- List item for each team member -->
+                <li><strong>Simrandeep Kaur</strong> - 200554998</li>
+                <li><strong>Ashmandeep Kaur</strong> - 200555988 </li>
+                <li><strong>Kuljinder Kaur</strong> - 200555472 </li>
+                <li><strong>Karanpreet Singh</strong> - 200555500 </li>
+            </ul>
+
+            <!-- Paragraph for team's goal -->
+            <p>Together, we strive to create a user-friendly platform that allows book enthusiasts to discover, explore, and share their favorite literary works.</p>
+        </div>
+        <!-- Column for team image -->
+        <div class="col-md-4">
+            <!-- Placeholder image for the team -->
+            <img src="https://img.freepik.com/free-vector/business-team-brainstorm-idea-lightbulb-from-jigsaw-working-team-collaboration-enterprise-cooperation-colleagues-mutual-assistance-concept-pinkish-coral-bluevector-isolated-illustration_335657-1651.jpg?t=st=1711748719~exp=1711752319~hmac=762079e308c9ca64ba2d68bb0df7835d0145c6dc043f6507c07bcc4856651043&w=996" class="img-fluid" alt="Team Image">
+        </div>
+    </div>
+</div>

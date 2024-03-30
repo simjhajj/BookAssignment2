@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    // Setting the title of the page
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Heading welcoming users to the book nest -->
+            <h1 class="display-4" style="color: #007bff;">Welcome to our Book Nest</h1>
+            <!-- Description of the book collection -->
+            <p class="lead">Explore a vast collection of books covering various genres, authors, and topics. Whether you're a book enthusiast or just looking for your next read, our catalogue has something for everyone.</p>
+            <!-- Additional information -->
+            <p class="lead">Browse through our selection, discover new titles, and find your next literary adventure.</p>
+            <!-- Button to navigate to the book catalogue -->
+            <a href="/BookList" class="btn btn-primary">View Catalogue</a>
+        </div>
+        <div class="col-md-6">
+            <!-- Image representing the book catalogue -->
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="Book Catalogue Image">
+        </div>
+    </div>
+</div>

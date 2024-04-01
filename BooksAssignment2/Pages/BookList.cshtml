@@ -1,59 +1,63 @@
-﻿@page
+@page
 @model BooksAssignment2.Pages.BookListModel
 
 @{
-    // Declaring and initializing the mainTitle variable
     string mainTitle = "ASP.NET Web Core JSON Demo";
-    // Setting the title for the page
     ViewData["Title"] = "Book List";
 }
 
-<!-- Displaying the mainTitle with blue color -->
-<h1 style="color:#007bff;">@mainTitle</h1>
+<!-- Main title -->
+<h1 class="display-4 text-primary">@mainTitle</h1>
 
-<!-- Displaying a heading for the book list -->
-<h2 style="font-size: 24px; font-weight: bold;">Book List</h2>
-
-@*<div class="row books">
-    <!-- Looping through each product in the Books list -->
+<!-- Book cards -->
+<div class="row">
     @foreach (var book in Model.Books)
     {
-        <div class="card col-sm-6 col-md-4">
-            <div class="card-img" style="background-image: url('@book.Img'); height: 300px; background-size: cover;">
-            </div>
-            <div class="card-body text-center">
-                <h4 class="card-title">@book.Title</h4>
+        <div class="col-md-4 mb-4">
+            <!-- Card -->
+            <div class="card h-100 shadow-sm">
+                <!-- Card image -->
+                <img src="@book.Img" class="card-img-top" alt="Book Image">
+                <!-- Card body -->
+                <div class="card-body">
+                    <!-- Book title -->
+                    <h5 class="card-title">@book.Title</h5>
+                    <!-- Book author -->
+                    <p class="card-text text-muted">@book.Author</p>
+                    <!-- Book genre -->
+                    <p class="card-text">@book.Genre</p>
+                </div>
+                <!-- Card footer -->
+                <div class="card-footer bg-transparent border-top-0 text-left">
+                    <!-- View Details button -->
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                </div>
             </div>
         </div>
     }
-</div>*@
+</div>
 
-<!-- Creating a table to display the list of books -->
-<table class="table table-bordered table-striped" style="background-color: #F8F6E3;">
-    <thead style="background-color: #97E7E1;">
-        <!-- Table header with column names -->
-        <tr>
-            <th scope="col" style="color: #000000">Title</th>
-            <th scope="col" style="color: #000000;">Author</th>
-            <th scope="col" style="color: #000000;">Image</th>
-            <th scope="col" style="color: #000000;">Genre</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- Looping through each book in the Model.Books list -->
-        @foreach (var book in Model.Books)
-        {
-            <!-- Displaying details of each book in a table row -->
-            <tr>
-                <!-- Displaying book title -->
-                <td style="color: #343a40;">@book.Title</td>
-                <!-- Displaying book author -->
-                <td style="color: #343a40;">@book.Author</td>
-                <!-- Displaying book image -->
-                <td><img class="w-100" src="@book.Img" alt="Book Image" style="height: 250px; width: auto;"></td>
-                <!-- Displaying book genre -->
-                <td style="color: #343a40;">@book.Genre</td>
-            </tr>
+<!-- Custom CSS styles -->
+<style>
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-    </tbody>
-</table>
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-title {
+        font-weight: bold;
+    }
+
+    .card-footer {
+        text-align: center;
+    }
+</style>
